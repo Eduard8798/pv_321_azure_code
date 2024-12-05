@@ -16,6 +16,10 @@ export const AZURE_STORAGE_ACCOUNT_KEY = process.env.AZURE_STORAGE_ACCOUNT_KEY |
 export const AZURE_STORAGE_AVATAR_BACKET = process.env.AZURE_STORAGE_AVATAR_BACKET || 'avatar';
 
 
+export const AZURE_COMPUTER_VISION_ENDPOINT = process.env.AZURE_COMPUTER_VISION_ENDPOINT || null;
+export const AZURE_COMPUTER_VISION_KEY = process.env.AZURE_COMPUTER_VISION_KEY || null;
+export const AZURE_COMPUTER_VISION_REGION = process.env.AZURE_COMPUTER_VISION_REGION || 'westeurope';
+
 /* Настройка папки загрузки */
 
 
@@ -29,4 +33,4 @@ const __dirname = path.dirname(__filename);
 
 //настройка пути для закгрузки временых файлов
 
-export const UPLOAD_DIR = path.resolve(__dirname,'../uploads'); // корневая папка uploads
+export const UPLOAD_DIR = path.resolve(__dirname, '../uploads'); // корневая папка uploads
