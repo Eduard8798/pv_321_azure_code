@@ -20,6 +20,14 @@ export const AZURE_COMPUTER_VISION_ENDPOINT = process.env.AZURE_COMPUTER_VISION_
 export const AZURE_COMPUTER_VISION_KEY = process.env.AZURE_COMPUTER_VISION_KEY || null;
 export const AZURE_COMPUTER_VISION_REGION = process.env.AZURE_COMPUTER_VISION_REGION || 'westeurope';
 
+
+
+/*Setting translations*/
+
+export const AZURE_TRANSLATION_ENDPOINT = process.env.AZURE_TRANSLATION_ENDPOINT
+export const AZURE_TRANSLATION_KEY = process.env.AZURE_TRANSLATION_KEY
+export const AZURE_TRANSLATION_REGION = process.env.AZURE_TRANSLATION_REGION
+
 /* Настройка папки загрузки */
 
 

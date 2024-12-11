@@ -42,8 +42,12 @@
                 img.width = 200;
                 img.src = result.file.url;
 
+                const h2 = document.createElement('h2');
+                h2.textContent = result.traslations.uk;
+
                 const h3 = document.createElement('h3');
                 h3.textContent = result.caption;
+
                 console.log('Ответ сервера:', JSON.stringify(result, null, 2));
                 console.log('URL файла:', result.file?.url);
                 console.log('Подпись:', result.caption);
@@ -53,6 +57,7 @@
                 divAzure.innerHTML = '';
                 divAzure.appendChild(img);
                 divAzure.appendChild(h3);
+                divAzure.appendChild(h2);
 
             } else {
                 console.error('Ошибка загрузки:', response.statusText);
